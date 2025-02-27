@@ -1,0 +1,11 @@
+id = "python-requirements"
+name = "Python requirements and constraints"
+version = "0.0.1"
+schema_version = 1
+authors = ["Gabriel Linder <linder.gabriel@gmail.com>"]
+description = "Syntax highlighting for requirements.txt and constraints.txt files"
+repository = "https://github.com/dargor/zed-python-requirements"
+
+[grammars.requirements]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-requirements"
+commit = "5ad9b7581b3334f6ad492847d007f2fac6e6e5f2"

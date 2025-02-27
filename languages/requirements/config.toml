@@ -1,0 +1,5 @@
+name = "Python requirements"
+grammar = "requirements"
+# FIXME path_suffixes does not support glob patterns
+path_suffixes = ["requirements.txt"]
+line_comments = ["# "]

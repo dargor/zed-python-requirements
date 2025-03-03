@@ -21,6 +21,7 @@ Zed does not (yet ?) support registering globs from extensions, so you will need
       "*_constraints.txt"
     ],
     "Python requirements": [
+      "**/requirements/*.txt",
       "requirements.txt",
       "requirements-*.txt",
       "requirements_*.txt",

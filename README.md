@@ -14,19 +14,11 @@ Zed does not (yet ?) support registering globs from extensions, so you will need
 {
   "file_types": {
     "Python constraints": [
-      "constraints.txt",
-      "constraints-*.txt",
-      "constraints_*.txt",
-      "*-constraints.txt",
-      "*_constraints.txt"
+      "*constraints*.txt"
     ],
     "Python requirements": [
-      "**/requirements/*.txt",
-      "requirements.txt",
-      "requirements-*.txt",
-      "requirements_*.txt",
-      "*-requirements.txt",
-      "*_requirements.txt"
+      "**/requirements/*.{in,txt}",
+      "*requirements*.{in,txt}"
     ]
   }
 }

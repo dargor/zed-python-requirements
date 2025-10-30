@@ -6,6 +6,8 @@ This extension provides syntax highlighting for `requirements.txt` and `constrai
 
 It leverages the [tree-sitter-requirements](https://github.com/tree-sitter-grammars/tree-sitter-requirements) grammar to ensure accurate and visually appealing syntax highlighting.
 
+It also support `TODO` highlighting using the [Comment](https://github.com/thedadams/zed-comment) extension.
+
 ## Configuration
 
 Zed does not (yet ?) support registering globs from extensions, so you will need to put these lines in your `settings.json` :

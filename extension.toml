@@ -1,6 +1,6 @@
 id = "python-requirements"
 name = "Python requirements and constraints"
-version = "0.0.2"
+version = "0.0.3"
 schema_version = 1
 authors = ["Gabriel Linder <linder.gabriel@gmail.com>"]
 description = "Syntax highlighting for requirements.txt and constraints.txt files"

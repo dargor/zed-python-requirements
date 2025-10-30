@@ -1,5 +1,5 @@
 name = "Python constraints"
 grammar = "requirements"
-# FIXME path_suffixes does not support glob patterns
+# FIXME(dargor): path_suffixes does not support glob patterns
 path_suffixes = ["constraints.txt"]
 line_comments = ["# "]

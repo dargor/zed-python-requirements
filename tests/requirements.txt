@@ -1,0 +1,50 @@
+# Base packages
+requests==2.31.0
+pytest>=7.4,<8
+
+# Extras with environment marker
+numpy[all]>=1.20.0,<2 ; python_version >= "3.8"
+
+# Relative path dependency
+../libs/localpackage
+
+# Recursive include
+-r base.in
+
+# Pre-release opt-in and index override
+--pre
+--extra-index-url https://packages.example.com/simple
+
+# Direct reference using PEP 508 style
+uvicorn @ https://github.com/encode/uvicorn/archive/refs/tags/0.23.2.zip
+
+# Editable VCS requirement pinned to commit
+-e git+https://github.com/pallets/flask.git@35c4517#egg=Flask
+
+# Hash-pinned requirement with line continuations
+cffi==1.15.1 \
+    --hash=sha256:5d9a7fa728b9824f3efcf5bbf908db78f1c16f144adb5a1e1ed0fddf5c2c5d0a \
+    --hash=sha256:ddabf956dd62d0b6c20b6c3a1cf98e7688834a9f2a7821cf1a2efd8f46d5c4c3
+
+# Inline comment after requirement
+black==23.9.1 # Formatter for Python code
+
+# Environment marker with extras and python platform
+fastapi[standard]==0.103.2 ; sys_platform == "linux"
+
+# Injections for Comment extension
+# ERROR(author): with a message
+# FIXME(author): with a message
+# BUG(author): with a message
+# TODO(author): with a message
+# WIP(author): with a message
+# WARN(author): with a message
+# HACK(author): with a message
+# WARNING(author): with a message
+# FIX(author): with a message
+# INFO(author): with a message
+# NOTE(author): with a message
+# XXX(author): with a message
+# DOCS(author): with a message
+# PERF(author): with a message
+# TEST(author): with a message

@@ -1,0 +1,39 @@
+# Constraints applied by tooling
+--no-binary :all:
+--only-binary numpy
+--index-url https://pypi.example.com/simple
+--trusted-host pypi.example.com
+--find-links https://artifacts.example.com/packages/
+
+# Exact pins with different comparison operators
+Django==4.2.5
+scipy===1.10.1
+pandas~=2.1
+six>=1.16,<2
+
+# Constraint with environment marker
+pydantic>=1.10,<2 ; implementation_name == "cpython"
+gunicorn==21.2.0 ; python_version < "3.12"
+
+# Direct reference constraint
+localpkg @ file:///opt/deps/localpkg-0.1.0.tar.gz
+
+# Nested constraint include
+-c legacy-constraints.txt
+
+# Injections for Comment extension
+# ERROR(author): with a message
+# FIXME(author): with a message
+# BUG(author): with a message
+# TODO(author): with a message
+# WIP(author): with a message
+# WARN(author): with a message
+# HACK(author): with a message
+# WARNING(author): with a message
+# FIX(author): with a message
+# INFO(author): with a message
+# NOTE(author): with a message
+# XXX(author): with a message
+# DOCS(author): with a message
+# PERF(author): with a message
+# TEST(author): with a message

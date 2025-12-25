@@ -15,9 +15,7 @@ Zed does not (yet ?) support registering globs from extensions, so you will need
 ```json
 {
   "file_types": {
-    "Python constraints": [
-      "*constraints*.txt"
-    ],
+    "Python constraints": ["*constraints*.txt"],
     "Python requirements": [
       "**/requirements/*.{in,txt}",
       "*requirements*.{in,txt}"

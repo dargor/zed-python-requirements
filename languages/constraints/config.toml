@@ -3,3 +3,6 @@ grammar = "requirements"
 # FIXME(dargor): path_suffixes does not support glob patterns
 path_suffixes = ["constraints.txt"]
 line_comments = ["# "]
+brackets = [
+  { start = "[", end = "]", close = true, newline = false },
+]

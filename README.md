@@ -8,6 +8,10 @@ It leverages the [tree-sitter-requirements](https://github.com/tree-sitter-gramm
 
 It also support `TODO` highlighting using the [Comment](https://github.com/thedadams/zed-comment) extension.
 
+Works best when paired with the [Dependi](https://github.com/mpiton/zed-dependi) extension to provide inlay hints and diagnostics :
+
+![with dependi](static/with-dependi.png)
+
 ## Configuration
 
 Zed does not (yet ?) support registering globs from extensions, so you will need to put these lines in your `settings.json` :

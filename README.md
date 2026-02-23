@@ -2,15 +2,21 @@
 
 ## Overview
 
-This extension provides syntax highlighting for `requirements.txt` and `constraints.txt` files in the [Zed](https://zed.dev/) code editor.
+This extension provides syntax highlighting for `requirements.txt` and `constraints.txt` files in [Zed](https://zed.dev/).
 
 It leverages the [tree-sitter-requirements](https://github.com/tree-sitter-grammars/tree-sitter-requirements) grammar to ensure accurate and visually appealing syntax highlighting.
 
 It also support `TODO` highlighting using the [Comment](https://github.com/thedadams/zed-comment) extension.
 
+Works best when paired with the [Dependi](https://github.com/mpiton/zed-dependi) extension to provide inlay hints and diagnostics :
+
+![with dependi](static/with-dependi.png)
+
 ## Configuration
 
-Zed does not (yet ?) support registering globs from extensions, so you will need to put these lines in your `settings.json` :
+Zed does not (yet ?) support registering globs from extensions.
+
+You will need to put these lines in your `settings.json` :
 
 ```json
 {
